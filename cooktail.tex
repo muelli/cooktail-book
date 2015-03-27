@@ -1,0 +1,63 @@
+\documentclass{scrartcl}
+\usepackage{xcookybooky}
+
+
+\usepackage[T1]{fontenc}
+\usepackage{bookman}
+% Choose your favorite font for the text
+\usepackage[dvipsnames,svgnames]{xcolor}
+
+
+\begin{document}
+Hallo.
+
+
+\section{Recipes}
+On the following pages follow some recipes.
+
+\newpage
+
+%% FIRST RECIPE
+
+\ingredients
+{%
+    \nicefrac{1}{2} & l & Wasser\\
+    4   & TL & Hagebuttentee\\
+    2   & EL & Honig\\
+    1   &    & Zitrone\\
+    \nicefrac{1}{2} &l & Fruchtsaft\\
+    100 & g  & Erdbeeren\\
+    50  & g  & Himbeeren\\
+    1   &    & Orange\\
+    100 & g  & Weintrauben
+}
+
+\preparation
+{%
+    \init Wasser und Hagebuttentee mischen.  Mit dem Honig und dem Saft der Zitrone abschmecken.
+    \init In das Serviergef\"{a}{\ss} geben und erst kurz vor dem Eintreffen der G\"{a}ste das kleingeschnittene Obst (Erdbeeren, Himbeeren, Orangenfilets und entkernte Weintrauben) hinzuf\"{u}gen.
+}
+
+\hint
+{%
+    Ein Schu{\ss} Mineralwasser verleiht der Bowle ein erfrischendes Prickeln. Ein Schu{\ss} Mineralwasser verleiht der Bowle ein erfrischendes Prickeln.
+}
+
+\graph      % This command MUST be LAST!
+[%
+    %recipename,
+    recipetime={5 min},
+    portion,
+%   joule,
+    sgraph,
+    sdx=2,
+    sdy=0,
+%   bgraph,
+    bdx=0,
+    bdy=0
+]
+
+\newpage
+
+foo
+\end{document}

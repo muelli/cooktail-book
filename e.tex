@@ -1,0 +1,85 @@
+\documentclass[%
+a4paper,
+%twoside,
+11pt
+]{scrartcl}
+
+% encoding, font, language
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{lmodern}
+\usepackage[ngerman, english]{babel}
+
+\usepackage{nicefrac}
+
+\usepackage[
+    handwritten,
+    nowarnings,
+    %myconfig
+]
+{xcookybooky}
+
+\DeclareRobustCommand{\textcelcius}{\ensuremath{^{\circ}\mathrm{C}}}
+
+
+\setcounter{secnumdepth}{1}
+\renewcommand*{\recipesection}[2][]
+{%
+    \subsection[#1]{#2}
+}
+\renewcommand{\subsectionmark}[1]
+{% no implementation to display the section name instead
+}
+
+
+\usepackage{hyperref}    % must be the last package
+\iffalse
+\hypersetup{%
+    pdfauthor            = {Sven Harder},
+    pdftitle             = {Example Recipes for xcookybooky},
+    pdfsubject           = {Recipes},
+    pdfkeywords          = {example, recipes, cookbook, xcookybooky},
+    pdfstartview         = {FitV},
+    pdfview              = {FitH},
+    pdfpagemode          = {UseNone}, % Options; UseNone, UseOutlines
+    bookmarksopen        = {true},
+    pdfpagetransition    = {Glitter},
+    colorlinks           = {true},
+    linkcolor            = {black},
+    urlcolor             = {blue},
+    citecolor            = {black},
+    filecolor            = {black},
+}
+\fi
+
+\hbadness=10000	% Ignore underfull boxes
+
+\begin{document}
+
+\title{Cocktails for the bestest party}
+\author{TMMS}
+\maketitle
+
+\begin{abstract}
+    \noindent Don't drink and derive!
+\end{abstract}
+
+\tableofcontents
+
+\vspace{5em}
+
+% background graphic
+\setBackgroundPicture[x, y=-2cm, width=\paperwidth-4cm, height, orientation = pagecenter]
+{pic/background}
+%{pic/cocktails1}
+
+\section{Cocktails}
+\include{tex/greenbeast}
+\include{tex/flip}
+\include{tex/tomate}
+\include{tex/culdesac}
+\include{tex/colonyroom}
+\include{tex/sazerac}
+\include{tex/wilfried}
+
+\end{document} 
